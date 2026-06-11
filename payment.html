@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+    <title>Judith's Bakary</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <!---------HEADER---------->
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo2.jpg"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="Recipe.html">RECIPE</a></li>
+                <li><a href="order.html">ORDER</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+    <h1>Payment</h1>
+    </section>
+  <!---------About us content-->
+
+  <section class="Order-content">
+     <div class="order-row">
+
+     <div class="order-box">
+      <form class="order-form">
+       <h2>Make Payment here</h2>
+       <label>M-Pesa Number</label>
+       <input type="tel" placeholder="07XXXXXXXX">
+       <br>
+       <label>Amount</label>
+       <input type="number">
+       <br>
+       <button class="hero-btn red-btn">Pay Now</button>
+      </form>
+     </div>
+     </div>
+  </section>
+
+<!-----FOOTER-------->
+<section class="footer">
+  <h4>About Us</h4>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, cum.</p>
+   <div class="icons">
+    <a href="https://www.linkedin.com/in/meyerlencer" target="_blank" style="--color: #0077b5">
+      <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+    <a href="https://www.facebook.com/Lencer Meyer" target="_blank" style="--color:#1877F2">
+      <i class="fa-brands fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/meyerlencer" target="_blank" style ="--color: #e1306c">
+      <i class="fa-brands fa-instagram instagram"></i>
+    </a>
+    <a href="https://www.tiktok.com/@user4427081275495" target="_blank" style="--color: #FF0050">
+      <i class="fa-brands fa-tiktok tiktok"></i>
+    </a>
+    <a href="https://wa.me/254111919330" target="_blank" style="--color:#25D366">
+       <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="https://x.com/meyerlencer" target="_blank" style="--color: #FFFFFF">
+      <i class="fa-brands fa-x-twitter"></i>
+    </a>
+   </div>
+   <div class="business-hours">
+    <h2>Business Hours</h2>
+    <p>Monday-Friday: 8:00 AM - 6:00 PM</p>
+    <p>Saturday: 9:00 AM - 5:00 PM</p>
+    <p>Sunday: Closed</p>
+   </div>
+   <p>Made with<i class="fa-solid fa-heart"></i> Lencer Meyer</p>
+</section>
+
+
+
+
+<!-----------Javascript for toggle Menu----->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+      navLinks.style.right="0";
+    }
+    function hideMenu(){
+      navLinks.style.right="-200px";
+    }
+</script>
+</body>
+</html>

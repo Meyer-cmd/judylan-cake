@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<head>
+    <title>Judith's Bakary</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <!---------HEADER---------->
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo2.jpg"></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="Recipe.html">RECIPE</a></li>
+                <li><a href="order.html">ORDER</a></li>
+                 <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+    <h1>Make your order here</h1>
+    </section>
+<!--------Samples------->
+<section class="sample">
+  <h1>Our Verified Samples</h1>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+    
+  <div class="row">
+    <div class="sample-col">
+      <img src="images/valentines.jpg">
+      <div class="layer">
+        <h3>VALENTINES</h3>
+      </div>
+    </div>
+     <div class="sample-col">
+      <img src="images/dadbirthday.jpg">
+      <div class="layer">
+        <h3>BIRTHDAY</h3>
+      </div>
+    </div> <div class="sample-col">
+      <img src="images/Anniversary.jpg">
+      <div class="layer">
+        <h3>ANNIVERSARY</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<!-----------Select Order------->
+<section class="Order-content">
+  <div class="order-row">
+
+       <div class="order-box">
+        <h3>Make an order</h3>
+        
+        <form class="order-form">
+          <!------Customer Details------->
+          <label>Full Name</label>
+          <i class="fa-solid fa-user" style="color:#f59e0b;" ></i><input type="text" placeholder="Enter your full name">
+        
+          <label>Phone Number</label>
+          <i class="fa-solid fa-phone" style="color:#22c55e;"></i><input type="tel" placeholder="Enter Phone Number">
+          
+          <label>Email</label>
+          <i class="fa-solid fa-envelope" style="color: #3b82f6;"></i><input type="email" placeholder="Email address">
+          
+          <label>Date</label>
+          <i class="fa-solid fa-calendar-days" style="color: #8b5cf6;"></i><input type="date" placeholder="Dalivery/Pickup Date">
+          <br>
+
+
+          <p> <i class="fa-solid fa-cake-candles" style="color: #ec4899;"></i>Select Flavor </i></p>
+          <input type="checkbox" id="vanilla" name="flavor" value="vanilla">
+          <label for="vanilla">Vanilla</label>
+          <br>
+          <input type="checkbox" id="stawberry" name="flavor" value="stawberry">
+          <label for="stawberry">Strawberry</label>
+          <br>
+          <input type="checkbox" id="fruitcake" name="flavor" value="fruitcake">
+          <label for="fruitcake">FruitCake</label>
+          <br>
+          <input type="checkbox" id="passion" name="flavor" value="passion">
+          <label for="passion">Passion</label>
+          <br>
+          <input type="checkbox" id="lemon" name="flavor" value="lemon">
+          <label for="lemon">Lemon </label>
+          <br>
+          <input type="checkbox" id="mint" name="flavor" value="mint">
+          <label for="mint">Mint</label>
+          <br>
+
+          <p><i class="fa-solid fa-palette" style="color: #f97316;"></i>Design and Decorations</p>
+          <textarea rows="5" placeholder="Write the Message to appear on the cake. Any allergies?  Preferred colors? Preferred delivary time?"></textarea>
+
+
+          <p><i class="fa-solid fa-champagne-glasses" style="color: #eab308;"></i>What is The Function</p>
+          <input type="radio" id="birthday" name="function" value="Birthday">
+          <label for="mint">Birthday</label>
+          <br>
+          <input type="radio" id="wedding" name="function" value="wedding">
+          <label for="wedding">Wedding</label>
+          <br>
+          <input type="radio" id="anniversary" name="function" value="anniversary">
+          <label for="anniversary">Anniversary</label>
+          <br>
+          <input type="radio" id="gender" name="function" value="gender">
+          <label for="gender">Gender Reveal</label>
+          <br>
+          <input type="radio" id="valentines" name="function" value="valentines">
+          <label for="mint">Valentines</label>
+          <br>
+
+
+          <p><i class="fa-solid fa-truck" style="color:#64748b;"></i>Delivery Method</p>
+
+          <input type="radio" name="delivery" value="pickup">
+          <label>Pick Up</label>
+          <br>
+          <input type="radio" name="delivery" value="delivery">
+          <label>Home Delivary</label>
+
+          <P><i class="fa-solid fa-ruler" style="color: #14b8a6;"></i>Select size</P>
+          <select name="size">
+            <option value="small">0.5kg</option>
+            <option value="small">1kg</option>
+            <option value="small">2kg</option>
+            <option value="small">3kg</option>
+            <option value="small">Custom Size</option>
+          </select>
+          <br><br>
+
+          <p><i class="fa-solid fa-image" style="color: #a855f7;"></i>Any Ideas or Inspirations?</p>
+          <input type="file">
+
+          <button type="button" class="hero-btn red-btn" onclick="window.location.href='payment.html';"><i class="fa-solid fa-cart-shopping"></i>Place Order</button>
+          <button type="reset" class="hero-btn red-btn">Clear</button>
+         </form>
+      </div>
+
+      <div class="comment-box">
+
+        <h3>Leave a comment <i class="fa-solid fa-comment" style="color: #06b6d4;"></i></h3>
+
+        <form class="comment-form">
+          <input type="text" placeholder="Enter Name">
+          <input type="email" placeholder="Enter Email">
+          <textarea rows="5" placeholder="Your comment"></textarea>
+          <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+        </form>
+
+      </div>
+    </div> 
+</section>
+
+
+
+
+
+<!-----FOOTER-------->
+<section class="footer">
+  <h4>About Us</h4>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error, cum.</p>
+   <div class="icons">
+    <a href="https://www.linkedin.com/in/meyerlencer" target="_blank" style="--color: #0077b5">
+      <i class="fa-brands fa-linkedin-in"></i>
+    </a>
+    <a href="https://www.facebook.com/Lencer Meyer" target="_blank" style="--color:#1877F2">
+      <i class="fa-brands fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/meyerlencer" target="_blank" style ="--color: #e1306c">
+      <i class="fa-brands fa-instagram instagram"></i>
+    </a>
+    <a href="https://www.tiktok.com/@user4427081275495" target="_blank" style="--color: #FF0050">
+      <i class="fa-brands fa-tiktok tiktok"></i>
+    </a>
+    <a href="https://wa.me/254111919330" target="_blank" style="--color:#25D366">
+       <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a href="https://x.com/meyerlencer" target="_blank" style="--color: #FFFFFF">
+      <i class="fa-brands fa-x-twitter"></i>
+    </a>
+   </div>
+   <div class="business-hours">
+    <h2>Business Hours</h2>
+    <p>Monday-Friday: 8:00 AM - 6:00 PM</p>
+    <p>Saturday: 9:00 AM - 5:00 PM</p>
+    <p>Sunday: Closed</p>
+   </div>
+   <p>Made with<i class="fa-solid fa-heart"></i> Lencer Meyer</p>
+</section>
+
+
+
+
+<!-----------Javascript for toggle Menu----->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+      navLinks.style.right="0";
+    }
+    function hideMenu(){
+      navLinks.style.right="-200px";
+    }
+</script>
+</body>
+</html>
